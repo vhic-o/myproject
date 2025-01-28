@@ -16,6 +16,7 @@ header{
     color: white;
     padding: 15px 20px;
 }
+/*
 .header-container{
     display: flex;
     justify-content: space-between;
@@ -43,6 +44,7 @@ nav ul li a:hover{
     color: #b22222;
 }
 /* Search Bar */
+/*
 .search-bar{
     display: flex;
     align-items: center;
@@ -64,6 +66,7 @@ nav ul li a:hover{
 }.search-bar button:hover{
     background-color: #8b0000;
 }
+
 /* Breaking News Section */
 .breaking-news{
     background-color: #f44336;
