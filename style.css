@@ -1,3 +1,76 @@
+/* General Styles */
 *{
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: ;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+/* Header */
+header{
+    background-color: darkblue;
+    color: white;
+    padding: 15px 20px;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo h1{
+    font-size: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    margin: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #b22222;
+}
+/* Search Bar */
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search-bar input{
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+.search-bar button{
+    background-color: #b22222;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}.search-bar button:hover{
+    background-color: #8b0000;
+}
+/* Breaking News Section */
+.breaking-news{
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.breaking-news h2{
+    margin-bottom: 5px;
 }
