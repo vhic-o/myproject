@@ -75,3 +75,21 @@ nav ul li a:hover{
 .breaking-news h2{
     margin-bottom: 5px;
 }
+/* main layout */
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+/* Left Sidebar */
+.left-sidebar{
+    width: 20px;
+    padding: 10px;
+    background-color: beige;
+}
+.left-sidebar ul{
+    list-style: none;
+}
+.left-sidebar ul li{
+    margin: 10px 0;
+}
