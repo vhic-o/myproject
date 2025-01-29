@@ -16,7 +16,6 @@ header{
     color: white;
     padding: 15px 20px;
 }
-/*
 .header-container{
     display: flex;
     justify-content: space-between;
@@ -44,7 +43,6 @@ nav ul li a:hover{
     color: #b22222;
 }
 /* Search Bar */
-/*
 .search-bar{
     display: flex;
     align-items: center;
