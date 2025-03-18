@@ -121,7 +121,7 @@ nav ul li a:hover{
 .news-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 50px;
 }
 .news-category{
     background-color:gainsboro;
