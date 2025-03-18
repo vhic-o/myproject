@@ -124,7 +124,7 @@ nav ul li a:hover{
     gap: 10px;
 }
 .news-category{
-    background-color: white;
+    background-color:gainsboro;
     padding: 10px;
     border-radius: 5px;
 }
@@ -137,8 +137,8 @@ nav ul li a:hover{
     margin-top: 10px;
 }
 .news-item img{
-    width: 00px;
-    height: 00px;
+    width: 100px;
+    height: 100px;
     margin-right: 10px;
     border-radius: 5px;
 }
