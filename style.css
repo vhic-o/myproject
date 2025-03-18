@@ -142,3 +142,6 @@ nav ul li a:hover{
     margin-right: 10px;
     border-radius: 5px;
 }
+.news-item a{
+    text-decoration: none;
+}
