@@ -103,3 +103,42 @@ nav ul li a:hover{
 .left-sidebar ul li a:hover{
     color: #ff4500;
 }
+/*Main Content */
+.news-main{
+    width: 60%;
+    padding: 10px;
+}
+/* Featured News */
+.featured-news {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.featured-news img{
+    width: 100%;
+    height: auto;
+}
+/* News Grid */
+.news-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.news-category{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.news-category h3{
+    text-align: center;
+}
+.news-item{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.news-item img{
+    width: 00px;
+    height: 00px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
