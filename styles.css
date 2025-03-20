@@ -78,8 +78,8 @@ nav ul li a:hover{
 /* main layout */
 .container{
     display: flex;
-    flex-direction: row;
-    margin: 20px;
+    justify-content:space-between;
+    gap: 20px;
 }
 /* Left Sidebar */
 .left-sidebar{
@@ -110,9 +110,10 @@ nav ul li a:hover{
 }
 /* Featured News */
 .featured-news {
-    width: 50px;
-    margin: 0;
-    padding: 20px 0;
+    width: 100%;
+    max-width:800px;
+    margin: auto;
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
     text-align: center;
@@ -149,6 +150,18 @@ nav ul li a:hover{
 .news-category h3{
     text-align: center;
 }
+.news-category.health{
+    background-color: #f8f8f8;
+}
+.news-category.economy{
+    background-color: #f0f0f0;
+}
+.news-category.social{
+    background-color: #f7f7f7;
+}
+.news-category.technology{
+    background-color: #e8e8e8;
+}
 .news-item{
     display: flex;
     align-items: center;
@@ -165,7 +178,8 @@ nav ul li a:hover{
 }
 /* right sidebar*/
 .right-sidebar{
-    width: 20px;
+    width: 250px;
     padding: 10px;
     background: #e57373;
+    border-radius: 5px;
 }
