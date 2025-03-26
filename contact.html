@@ -4,60 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Global News</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="contact">
+    <style>
+        /* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #E3F2FD; 
+}
 
+/* Header Styling */
+header.contact-header {
+    background-color: darkblue;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav.contact-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav.contact-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #1565C0; 
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin: 5px;
+}
+
+nav.contact-nav a:hover {
+    background: #0D47A1;
+}
+
+/* Contact Page Layout */
+.contact-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Sidebar for the Contact Form */
+.contact-sidebar {
+    width: 30%;
+    background-color: #BBDEFB; 
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-sidebar h2 {
+    text-align: center;
+    color: #0D47A1; /
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #1976D2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1565C0;
+}
+
+/* Right Section for Contact Info */
+.contact-info {
+    width: 70%;
+    padding: 30px;
+}
+
+.contact-info h2, .contact-info h3 {
+    color: #0D47A1;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Social Media Links */
+.contact-info a {
+    text-decoration: none;
+    color: #1976D2;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+contact-info a:hover {
+    color: #0D47A1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
     <header class="contact-header">
         <h1>Contact Us</h1>
-        <nav class="contact-nav">
-            <a href="index.html">Home</a>
-            <a href="health.html">Health</a>
-            <a href="economy.html">Economy</a>
-            <a href="social.html">Social</a>
-            <a href="technology.html">Technology</a>
-        </nav>
     </header>
 
-    <main class="contact-main">
-        <section class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>If you have any inquiries, feedback, or news tips, feel free to reach out to us.</p>
-            
-            <h3>Our Contact Details:</h3>
-            <p><strong>Email:</strong> support@globalnews.com</p>
-            <p><strong>Phone:</strong> +234 903 256 2760</p>
-            <p><strong>Address:</strong> 123 News Avenue, Lagos, Nigeria</p>
+    <nav class="contact-nav">
+        <a href="index.html">Home</a>
+        <a href="health.html">Health</a>
+        <a href="economy.html">Economy</a>
+        <a href="social.html">Social</a>
+        <a href="tech.html">Technology</a>
+    </nav>
 
-            <h3>Follow Us:</h3>
-            <p>
-                <a href="#">Facebook</a> | 
-                <a href="#">Twitter</a> | 
-                <a href="#">Instagram</a> | 
-                <a href="#">LinkedIn</a>
-            </p>
-        </section>
-
-        <section class="contact-form">
+    <div class="contact-container">
+        <!-- Left Sidebar (Send Us a Message) -->
+        <div class="contact-sidebar">
             <h2>Send Us a Message</h2>
-            <form action="submit_contact.php" method="POST">
+            <form>
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message">Your Message:</label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
-        </section>
-    </main>
+        </div>
+
+        <!-- Right Section (Contact Info) -->
+        <div class="contact-info">
+            <h2>Our contact Details</h2>
+            <p><strong>Email:</strong> support@globalnews.com</p>
+            <p><strong>Phone:</strong> +234 903 2562760 </p>
+            <p><strong>Address:</strong> 123 News Street, City, Country</p>
+
+            <h3>Follow Us</h3>
+            <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Global News. All rights reserved.</p>
+        <p>&copy; 2025 Global News</p>
     </footer>
-
 </body>
 </html>
