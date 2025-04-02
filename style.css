@@ -21,50 +21,57 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 .logo h1{
     font-size: 20px;
 }
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-nav ul li{
-    margin: 0;
-}
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: 0.3s;
-}
-nav ul li a:hover{
-    color: #b22222;
-}
-/* Search Bar */
-.search-bar{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.search-bar input{
-    padding: 5px;
-    font-size: 16px;
+.menu-toggle{
+    background: none;
     border: none;
-    border-radius: 5px;
-}
-.search-bar button{
-    background-color: #b22222;
+    font-size: 24px;
     color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
+    position: absolute;
+    top:15px;
+    right: 20px;
     cursor: pointer;
-}.search-bar button:hover{
-    background-color: #8b0000;
+    display: none;
 }
-
+nav{display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+nav a{text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+nav a:hover{
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+@media(max-width:768px){
+    .menu-toggle{
+        display: block;
+    }
+    nav{
+        display: none;
+        flex-direction: column;
+        background: #003366;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav.show{
+        display: flex;
+    }
+    
+}
 /* Breaking News Section */
 .breaking-news{
     background-color: #f44336;
@@ -174,6 +181,33 @@ nav ul li a:hover{
 }
 .news-item a{
     text-decoration: none;
+}
+/* Read More / Read Less */
+.read-more-content {
+    display: inline;
+}
+
+.read-more-content .more-text {
+    display: none;
+}
+
+.read-more-content.expanded .more-text {
+    display: inline;
+}
+
+.read-more-toggle {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.read-more-toggle:hover {
+    background: #0056b3;
 }
 /* right sidebar*/
 .right-sidebar{
