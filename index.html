@@ -9,19 +9,22 @@
 <body>
     <!--Header-->
     <header>
-        <div class="header-container">
             <div class="logo">
                 <h1>Global News</h1>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <nav id="nav-links">
-            <a href="index.html">Home</a>
-            <a href="health.html">Health</a>
-            <a href="economy.html">Economy</a>
-            <a href="tech.html">Technology</a>
-            <a href="contact.html">Contact</a>
+            <div class="menu" onclick="toggleMenu()">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+        <nav id="nav-links"  class="hidden-nav">
+            <ul>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="economy.html">Economy</a></li>
+                <li><a href="social.html">Social</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>      
         </nav>
-        </div>
     </header>
 
     <!--Breaking news section-->
@@ -66,7 +69,7 @@
                             <p class="read-more-content">Yoga offers numerious benefits, including improved flexibility, strength, balance, and reduced stress, anxiety, and chronic pain, while also promoting better sleep, increased energy, and overall well-being.</p>
                             <span class="more-text"> Regular yoga practice helps reduce stress, promotes relaxation, and increases body awareness. Whether you practice gentle Hatha or vigorous Vinyasa, yoga offers a wide range of physical and mental benefits.</span>
                             </p>
-                            <button class="read-more-toggle">Read More</button>
+                            <button class="read-more-btn">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +84,7 @@
                                 Fans erupted in celebration as the winning goal was scored in the final seconds.
                                 <span class="more-text"> The team’s coach praised their determination and teamwork, saying it was one of the greatest performances in the club’s history.</span>
                             </p>
-                            <button class="read-more-toggle">Read More</button>    
+                            <button class="read-more-btn">Read More</button>    
                         </div>
                     </div>
                 </div>
@@ -92,10 +95,10 @@
                         <img src="/images/images-9.jpg" alt="Economy News">
                         <div>
                             <h4>Stock Market Trends</h4>
-                            <p>During losing periods, positions are reduced and trade size is cut back. Analysts classify these trends as secular for long time-frames,primary for medium time-frames, and secondary for short time-frames.</p>
+                            <p class="read-more-content">During losing periods, positions are reduced and trade size is cut back. Analysts classify these trends as secular for long time-frames,primary for medium time-frames, and secondary for short time-frames.</p>
                             <span class="more-text"> Analysts predict that the trend will continue, driven by innovations in AI and semiconductor technology. Despite inflation concerns, investor confidence remains high as companies continue to report strong earnings.</span>
                             </p>
-                            <button class="read-more-toggle">Read More</button>
+                            <button class="read-more-btn">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -110,7 +113,7 @@
                                 Critics are calling it one of the most visually stunning movies ever made.
                                 <span class="more-text"> With an all-star cast and an immersive storyline, audiences are already demanding a sequel.</span>
                             </p>
-                            <button class="read-more-toggle">Read More</button>
+                            <button class="read-more-btn">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -138,7 +141,7 @@
                                 Schools will implement AI-based learning platforms to enhance student engagement.
                                 <span class="more-text"> Educators believe this approach will help students develop critical thinking skills and prepare them for the digital economy.</span>
                             </p>
-                            <button class="read-more-toggle">Read More</button>
+                            <button class="read-more-btn">Read More</button>
                         </div>
                     </div>
                 </div>

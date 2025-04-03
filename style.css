@@ -16,62 +16,53 @@ header{
     color: white;
     padding: 15px 20px;
 }
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-}
 .logo h1{
     font-size: 20px;
 }
-.menu-toggle{
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white;
-    position: absolute;
-    top:15px;
-    right: 20px;
+.menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
-    display: none;
+    margin: 20px;
 }
-nav{display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
-}
-nav a{text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    transition: background 0.3s ease;
-}
-nav a:hover{
-    background: rgba(255,255,255,0.2);
+.line{
+    height: 5px;
+    background-color: #000000;
     border-radius: 5px;
 }
-@media(max-width:768px){
-    .menu-toggle{
-        display: block;
-    }
-    nav{
+    .hidden-nav{
         display: none;
-        flex-direction: column;
         background: #003366;
         position: absolute;
         width: 100%;
         left: 0;
         top: 60px;
         padding: 10px 0;
-        text-align: center;
+        color: white;
+        box-sizing: border-box;
     }
-    nav.show{
+    .hidden-nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    .hidden-nav ul li{
+        margin: 10px 0;
+    }
+    .hidden-nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .hidden-nav ul li a:hover{
+        text-decoration: underline;
+    }
+    .show-nav{
         display: flex;
     }
-    
-}
+
 /* Breaking News Section */
 .breaking-news{
     background-color: #f44336;
@@ -192,21 +183,23 @@ nav a:hover{
 }
 
 .read-more-content.expanded .more-text {
-    display: inline;
+    display: none;
 }
 
-.read-more-toggle {
+.read-more-btn {
     background: #007bff;
     color: white;
     border: none;
     padding: 5px 10px;
     margin-top: 5px;
     cursor: pointer;
+    display: inline-block;
     border-radius: 5px;
+    transition: 0.3s;
     font-size: 14px;
 }
 
-.read-more-toggle:hover {
+.read-more-btn:hover {
     background: #0056b3;
 }
 /* right sidebar*/

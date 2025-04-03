@@ -64,26 +64,27 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateNews, 5000);
 
     // Hamburger Menu Toggle
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.getElementById("nav-links");
+    function toggleMenu() {
+        const nav = document.getElementById("nav-links")
+        nav.classList.toggle("show-nav")
 
-    menuToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("active");
-    });
+    }
+    event.preventDefault();
 
     // Read More / Read Less Functionality
-    document.querySelectorAll(".read-more-toggle").forEach(button => {
-        button.addEventListener("click", function () {
-            let content = this.previousElementSibling;
-            let moreText = content.querySelector(".more-text");
-
-            if (moreText.style.display === "none" || moreText.style.display === "") {
-                moreText.style.display = "inline";
-                this.textContent = "Read Less";
-            } else {
-                moreText.style.display = "none";
-                this.textContent = "Read More";
-            }
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".read-more-btn").forEach(button => {
+            button.addEventListener("click", function () {
+                const fullText = this.previousElementSibling.querySelector(".more-text");
+    
+                if (fullText.style.display === "none" || fullText.style.display === "") {
+                    fullText.style.display = "inline";
+                    this.innerText = "Read Less";
+                } else {
+                    fullText.style.display = "none";
+                    this.innerText = "Read More";
+                }
+            });
         });
     });
 
