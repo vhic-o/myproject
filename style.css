@@ -33,35 +33,35 @@ header{
     background-color: #000000;
     border-radius: 5px;
 }
-    .hidden-nav{
-        display: none;
-        background: #003366;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 60px;
-        padding: 10px 0;
-        color: white;
-        box-sizing: border-box;
-    }
-    .hidden-nav ul{
-        list-style-type: none;
-        padding: 0;
-    }
-    .hidden-nav ul li{
-        margin: 10px 0;
-    }
-    .hidden-nav ul li a{
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    .hidden-nav ul li a:hover{
-        text-decoration: underline;
-    }
-    .show-nav{
-        display: flex;
-    }
+.hidden-nav{
+     display: none;
+     background: #003366;
+     position: absolute;
+     width: 100%;
+     left: 0;
+     top: 60px;
+     padding: 10px 0;
+     color: white;
+     box-sizing: border-box;
+ }
+.hidden-nav ul{
+    list-style-type: none;
+    padding: 0;
+ }
+.hidden-nav ul li{
+    margin: 10px 0;
+}
+.hidden-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+ }
+ .hidden-nav ul li a:hover{
+    text-decoration: underline;
+}
+ .show-nav{
+    display: flex;
+}
 
 /* Breaking News Section */
 .breaking-news{

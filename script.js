@@ -64,10 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateNews, 5000);
 
     // Hamburger Menu Toggle
-    function toggleMenu() {
-        const nav = document.getElementById("nav-links")
-        nav.classList.toggle("show-nav")
-
+    function toggleMenu(){
+        const nav = document.getElementById("hiddenNav");
+        nav.classList.toggle("show-nav");
     }
     event.preventDefault();
 
