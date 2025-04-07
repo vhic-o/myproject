@@ -59,7 +59,7 @@ header{
  .hidden-nav ul li a:hover{
     text-decoration: underline;
 }
- .show-nav{
+.show-nav{
     display: flex;
 }
 
