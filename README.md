@@ -36,3 +36,7 @@ Breaking News: The website will automatically load the latest breaking news.
 Trending Now: Displays a list of current trending articles.
 
 Main News Categories: Click on "Read More" for more detailed articles in categories such as Health, Sports, Economy, Entertainment, and Technology.
+
+Contributing
+Feel free to fork this project and submit issues or pull requests. If you have improvements or new features you'd like to contribute, don't hesitate to create a pull request!
+
