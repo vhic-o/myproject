@@ -9,22 +9,24 @@
 <body>
     <!--Header-->
     <header>
+        <nav class="navbar">
             <div class="logo">
-                <h1>Global News</h1>
-            </div>
-            <div class="menu" onclick="toggleMenu()">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-        <nav id="hiddenNav" class="hidden-nav">
-            <ul>
+                <h1>Global News</h1></div>
+            <div class="menu" id="hamB" >
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+             
+          </div>
+          <div class="nav-links" id="navLinks">
                 <li><a href="health.html">Health</a></li>
                 <li><a href="economy.html">Economy</a></li>
                 <li><a href="social.html">Social</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>      
-        </nav>
+            </div>
+          </nav>
+        
+          <script src="home.js"></script>
     </header>
 
     <!--Breaking news section-->
@@ -69,7 +71,8 @@
                             <p class="read-more-content">Yoga offers numerious benefits, including improved flexibility, strength, balance, and reduced stress, anxiety, and chronic pain, while also promoting better sleep, increased energy, and overall well-being.</p>
                             <span class="more-text"> Regular yoga practice helps reduce stress, promotes relaxation, and increases body awareness. Whether you practice gentle Hatha or vigorous Vinyasa, yoga offers a wide range of physical and mental benefits.</span>
                             </p>
-                            <button class="read-more-btn">Read More</button>
+                            <!-- tese will take you to the individual page-->
+                            <button onclick="window.location.href='health.html'" class="read-more-btn">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -80,11 +83,11 @@
                         <div>
                             <h4>Epic Football Final: A Match for the Ages</h4>
                             <p class="read-more-content">
-                                Last night’s championship game was an absolute thriller, with the underdog team securing a last-minute victory.
+                                Last nights championship game was an absolute thriller, with the underdog team securing a last-minute victory.
                                 Fans erupted in celebration as the winning goal was scored in the final seconds.
-                                <span class="more-text"> The team’s coach praised their determination and teamwork, saying it was one of the greatest performances in the club’s history.</span>
+                                <span class="more-text"> The teams coach praised their determination and teamwork, saying it was one of the greatest performances in the clubs history.</span>
                             </p>
-                            <button class="read-more-btn">Read More</button>    
+                            <button onclick="window.location.href='social.html'" class="read-more-btn">Read More</button>    
                         </div>
                     </div>
                 </div>
@@ -98,7 +101,7 @@
                             <p class="read-more-content">During losing periods, positions are reduced and trade size is cut back. Analysts classify these trends as secular for long time-frames,primary for medium time-frames, and secondary for short time-frames.</p>
                             <span class="more-text"> Analysts predict that the trend will continue, driven by innovations in AI and semiconductor technology. Despite inflation concerns, investor confidence remains high as companies continue to report strong earnings.</span>
                             </p>
-                            <button class="read-more-btn">Read More</button>
+                            <button onclick="window.location.href='economy.html'" class="read-more-btn">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -113,11 +116,12 @@
                                 Critics are calling it one of the most visually stunning movies ever made.
                                 <span class="more-text"> With an all-star cast and an immersive storyline, audiences are already demanding a sequel.</span>
                             </p>
-                            <button class="read-more-btn">Read More</button>
+                            <button onclick="window.location.href='social.html'" class="read-more-btn">Read More</button>
                         </div>
                     </div>
                 </div>
-
+                
+          
                 <!--Social news-->
                 <div class="news-category social">
                     <h3>Social</h3>
@@ -126,7 +130,8 @@
                         <div>
                             <h4>Community project launched</h4>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae iste suscipit, ducimus ullam adipisci dolores. Aut dicta laudantium minus? Debitis consequatur non culpa id qui aut odio voluptatem nulla ducimus.</p>
-                            <a href="#">Read More</a>
+                            <button  onclick="window.location.href='social.html'"class="read-more-btn">Read More</button>
+                          
                         </div>
                     </div>
                 </div>
@@ -141,7 +146,7 @@
                                 Schools will implement AI-based learning platforms to enhance student engagement.
                                 <span class="more-text"> Educators believe this approach will help students develop critical thinking skills and prepare them for the digital economy.</span>
                             </p>
-                            <button class="read-more-btn">Read More</button>
+                            <button  onclick="window.location.href='social.html'" class="read-more-btn">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -154,7 +159,8 @@
                         <div>
                             <h4>Latest Smartphone Innovation</h4>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae iste suscipit, ducimus ullam adipisci dolores. Aut dicta laudantium minus? Debitis consequatur non culpa id qui aut odio voluptatem nulla ducimus.</p>
-                            <a href="#">Read More</a>
+                            <button  onclick="window.location.href='social.html'"class="read-more-btn">Read More</button>
+
                         </div>
                     </div>
                 </div>
@@ -165,7 +171,8 @@
                         <div>
                             <h4>AI-Driven Future: Whats's Next</h4>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae iste suscipit, ducimus ullam adipisci dolores. Aut dicta laudantium minus? Debitis consequatur non culpa id qui aut odio voluptatem nulla ducimus.</p>
-                            <a href="#">Read More</a>
+                            <button  onclick="window.location.href='tech.html'"class="read-more-btn">Read More</button>
+                           
                         </div>
                     </div>
                 </div>
@@ -189,7 +196,7 @@
     <!--footer-->
     <footer>
         <p>&copy; 2025 Global News. All rights reserved.</p>
-        <p><a href="#contact">Contact Us</a></p>
+        <p><a href="./contact.html">Contact Us</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
