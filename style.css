@@ -86,76 +86,55 @@ header{
 }
 
 /* Breaking News Section */
-.breaking-news{
+.breaking-news {
     background-color: #f44336;
     color: white;
     padding: 15px;
     text-align: center;
-    border: 1px solid #ccc;
     border-radius: 5px;
     margin: 20px 0;
     font-size: 1.2em;
 }
-.breaking-news h2{
-    margin-bottom: 5px;
+.breaking-news h2 {
+    margin-bottom: 10px;
     font-size: 1.5em;
 }
-/* The news carousel container */
+
+/* Carousel container */
 .news-carousel {
     position: relative;
     overflow: hidden;
-    height: 60px; /* Adjust based on your text size */
+    height: 60px;
 }
 
-/* The news items */
-.news-items{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+/* Wrapper that holds all items */
+.news-wrapper {
+    display: flex;
+    flex-direction: column;
+    animation: slide 36s infinite ease-in-out;
+}
+
+/* Each item */
+.news-items {
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     font-weight: bold;
     text-align: center;
     color: #460a0a;
-    transition: transform 0.5s ease-in-out;
+    padding: 10px;
 }
 
-/* Carousel animation: sliding effect */
+/* Animation */
 @keyframes slide {
-    0% {
-        transform: translateY(0);
-    }
-    20% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(-100%);
-    }
-    45% {
-        transform: translateY(-100%);
-    }
-    50% {
-        transform: translateY(-200%);
-    }
-    70% {
-        transform: translateY(-200%);
-    }
-    75% {
-        transform: translateY(-300%);
-    }
-    95% {
-        transform: translateY(-300%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Apply the animation */
-.news-carousel {
-    animation: slide 30s infinite;
+    0%, 13.88% { transform: translateY(0%); }           /* Item 1 */
+    16.66%, 30.55% { transform: translateY(-100%); }    /* Item 2 */
+    33.33%, 47.22% { transform: translateY(-200%); }    /* Item 3 */
+    50%, 63.88% { transform: translateY(-300%); }       /* Item 4 */
+    66.66%, 80.55% { transform: translateY(-400%); }    /* Item 5 */
+    83.33%, 97.22% { transform: translateY(-500%); }    /* Item 6 */
+    100% { transform: translateY(0%); }                 /* Back to Item 1 */
 }
 /* main layout */
 .container{
