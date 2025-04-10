@@ -89,7 +89,7 @@ header{
 /* Breaking News Section */
 .breaking-news {
     background-color: #f44336;
-    color: white;
+    color: black;
     padding: 15px;
     text-align: center;
     border-radius: 5px;
@@ -99,6 +99,12 @@ header{
 .breaking-news h2 {
     margin-bottom: 10px;
     font-size: 1.5em;
+}
+marquee {
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, .1); */
+    /* border: 1px solid rgba(0, 0, 0, .15); */
+    /* background-color:white; */
+    padding: 10px;
 }
 
 /* Carousel container */

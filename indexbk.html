@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Global News</h1></div>
+            <div class="menu" id="hamB" >
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+             
+          </div>
+          <div class="nav-links" id="navLinks">
+                <li><a href="health.html">Health</a></li>
+                <li><a href="economy.html">Economy</a></li>
+                <li><a href="social.html">Social</a></li>
+                <li><a href="tech.html">Technology</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+          </nav>
+        
+          <script src="home.js"></script>
+    </header>
+
+    <!--Breaking news section-->
+    <section class="breaking-news">
+        <h2>Breaking News</h2>
+        <marquee width="60%" direction="up" height="200px" behavior="scroll" scrollamount="3">
+                    <pre>
+                Breaking: Political events unfold around the world.
+
+                    <pre>
+                Sports: Historic championship win last night.
+                    
+                <pre>
+                Tech: Major AI breakthrough in the tech industry.      
+                    
+                <pre>              
+                Economy: Stock market sees unexpected surge today.
+
+                <pre>
+                Entertainment: Movie X breaks box office records.
+                
+                <pre>
+                Health: New research shows yoga improves mental well-being. 
+        </marquee>   
+    </section>
+    <!--Main layout-->
+    <div class="container">
+
+
+        <!--Left sidebar(Trending News)-->
+        <aside class="left-sidebar">
+            <h2>Trending Now</h2>
+            <ul id="trending-list">
+                <li><a href="https://www.bbc.com/news/politics" target="_blank">Breaking: Political events unfold</a></li>
+                <li><a href="https://www.espn.com" target="_blank">Sports: Team A wins championship</a></li>
+                <li><a href="https://www.techcrunch.com" target="_blank">Tech: New AI technology released</a></li>
+                <li><a href="https://www.hollywoodreporter.com" target="_blank">Entertainment: Movie X breaks record</a></li>
+            </ul>    
+        </aside>
+
+        <!--main content-->
+        <main class="news-main">
+
+            <!--featured news-->
+            <section class="featured-news">
+                <div class="show">
+                     <div class="like" style="background-image: url(images/img5.jpg);"></div>
+                     <div class="like" style="background-image: url(images/img3.jpg);"></div>
+                     <div class="like" style="background-image: url(images/img2.jpg);"></div>
+                     <div class="like" style="background-image: url(images/img4.jpg);"></div>
+                </div>
+                <h2>Top Story: Major Summit Concludes</h2>
+                <p>This event marked a significant step forward in AIConnect's market expansion and technical applications, and represented a major milestone for JuCoin in promoting the integration of AI and DePIN technologies.</p>
+            </section>
+
+            <!--category(Health, Economy, Social,Tech)-->
+            <section class="news-grid">
+
+                <div class="news-category health">
+                    <h3>Health</h3>
+                    <div class="news-item">
+                        <img src="/images/yoga.png" alt="Health News">
+                        <div>
+                            <h4>The benefit of yoga</h4>
+                            <p class="read-more-content">Yoga offers numerious benefits, including improved flexibility, strength, balance, and reduced stress, anxiety, and chronic pain, while also promoting better sleep, increased energy, and overall well-being.</p>
+                            <span class="more-text"> Regular yoga practice helps reduce stress, promotes relaxation, and increases body awareness.</span>
+                            </p>
+                            <!-- this will take you to the individual page-->
+                            <button onclick="window.location.href='health.html'" class="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-category health">
+                    <h3>Sport</h3>
+                    <div class="news-item">
+                        <img src="/images/sport.jpg" alt="Sport News">
+                        <div>
+                            <h4>Epic Football Final: A Match for the Ages</h4>
+                            <p class="read-more-content">
+                                Last nights championship game was an absolute thriller, with the underdog team securing a last-minute victory.Fans erupted in celebration as the winning goal was scored in the final seconds.</p>
+                                <span class="more-text"> The teams coach praised their determination and teamwork very well.</span>
+                            </p>
+                            <button onclick="window.location.href='social.html'" class="read-more-btn">Read More</button>    
+                        </div>
+                    </div>
+                </div>
+                <!--Economy news-->
+                <div class="news-category economy">
+                    <h3>Economy</h3>
+                    <div class="news-item">
+                        <img src="/images/eco.jpg" alt="Economy News">
+                        <div>
+                            <h4>Stock Market Trends</h4>
+                            <p class="read-more-content">During losing periods, positions are reduced and trade size is cut back. Analysts classify these trends as secular for long time-frames,primary for medium time-frames, and secondary for short time-frames.</p>
+                            <span class="more-text"> Analysts predict that the trend will continue, driven by innovations in AI and semiconductor technology.</span>
+                            </p>
+                            <button onclick="window.location.href='economy.html'" class="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-category economy">
+                    <h3>Entertainment</h3>
+                    <div class="news-item">
+                        <img src="/images/ent.jpg" alt="Entertainment News">
+                        <div>
+                            <h4>Blockbusters Movie breaks Records on Opening Weekend</h4>
+                            <p class="read-more-content">
+                                The much-anticipated action film shattered box office records within its first weekend.Critics are calling it one of the most visually stunning movies ever made.</p>
+                            <span class="more-text"> With an all-star cast and an immersive storyline, audiences are already demanding a sequel.</span>
+                            </p>
+                            <button onclick="window.location.href='social.html'" class="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                
+          
+                <!--Social news-->
+                <div class="news-category social">
+                    <h3>Social</h3>
+                    <div class="news-item">
+                        <img src="/images/social.jpg" alt="Social News">
+                        <div>
+                            <h4>Community project launched</h4>
+                            <p>CIHP is a multi-funded indigenous not-for-profit, non-governmental organization established in 2010 to promote better health outcomes for all Nigerians through sustainable partnerships and locally adapted, rigorously tested approaches by applying our collective learnings and experiences.</p>
+                            <button  onclick="window.location.href='social.html'"class="read-more-btn">Read More</button>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="news-category social">
+                    <h3>Education</h3>
+                    <div class="news-item">
+                        <img src="/images/edu.jpg" alt="Education News">
+                        <div>
+                            <h4>New Education Reforms Aim to Improve Learning</h4>
+                            <p class="read-more-content">
+                                The government has introduced a set of reforms aimed at making education more interactive and technology-driven.
+                                Schools will implement AI-based learning platforms to enhance student engagement.
+                                <span class="more-text"> Educators believe this approach will help students develop critical thinking skills and prepare them for the digital economy.</span>
+                            </p>
+                            <button  onclick="window.location.href='social.html'" class="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Technology news-->
+                <div class="news-category technology">
+                    <h3>Technology</h3>
+                    <div class="news-item">
+                        <img src="/images/tech1.jpg" alt="Tech News">
+                        <div>
+                            <h4>Latest Smartphone Innovation</h4>
+                            <p>Samsung's Galaxy S25 series integrates advanced AI features, including real-time language translation and personalized content creation, aiming to provide a more intuitive user experience.</p>
+                            <button  onclick="window.location.href='tech.html'"class="read-more-btn">Read More</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-category technology" >
+                    <h3>Technology</h3>
+                    <div class="news-item">
+                        <img src="/images/tech2.jpg" alt="Tech News">
+                        <div>
+                            <h4>AI-Driven Future: Whats's Next</h4>
+                            <p>The AI-driven future is rapidly transforming how we live, work, and connect. Next-generation developments are focused on hyper-personalized experiences, autonomous decision-making, and seamless human-AI collaboration.</p>
+                            <button  onclick="window.location.href='tech.html'"class="read-more-btn">Read More</button>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <!--right sidebar(popular news)-->
+        <aside class="right-sidebar">
+            <h2>Popular News</h2>
+            <ul id="popular-news-list">
+                <li><a href="https://www.nytimes.com/most-popular" target="_blank">Most read article of the year</a></li>
+                <li><a href="https://www.wired.com/category/tech" target="_blank">Tech industry insights</a></li>
+                <li><a href="https://www.healthline.com/nutrition/best-diets-2025" target="_blank">Health: Best diets for 2025</a></li>
+                <li><a href="https://www.forbes.com/economy/" target="_blank">Economy: Inflation explained</a></li>  
+            </ul>
+        </aside>
+
+    </div> 
+
+    <!--footer-->
+    <footer>
+        <p>&copy; 2025 Global News. All rights reserved.</p>
+        <p><a href="./contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
