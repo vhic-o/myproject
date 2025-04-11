@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global News</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!--Header-->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Global News</h1></div>
-            <div class="menu" id="hamB" >
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-             
-          </div>
-          <div class="nav-links" id="navLinks">
-                <li><a href="health.html">Health</a></li>
-                <li><a href="economy.html">Economy</a></li>
-                <li><a href="social.html">Social</a></li>
-                <li><a href="tech.html">Technology</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav>
+            <div class="topnav">
+                <a href="#home" class="active">GOODNEWS</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="health.html">Health</a>
+                    <a href="economy.html">Economy</a>
+                    <a href="social.html">Social</a>
+                    <a href="tech.html">Technology</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
             </div>
           </nav>
           <script src="home.js"></script>
