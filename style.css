@@ -13,7 +13,6 @@ body{
 }
 /* Header */
 header{
-    background-color: darkblue;
     padding: 15px 20px;
 }
 /* Style the navigation menu */
@@ -30,7 +29,7 @@ header{
   /* Style navigation menu links */
   .topnav a {
     color: white;
-    padding: 10px 12px;
+    padding: 15px 20px;
     text-decoration: none;
     font-size: 17px;
     display: block;
