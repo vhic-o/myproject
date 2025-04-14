@@ -285,15 +285,67 @@ footer a{
     text-decoration: none;
 }
 
-@media (max-width:700px) {
-    .show, .like, .breaking-news, .featured-news, .left-sidebar{
-        flex-direction: column;
+@media  (max-width: 600px) {
+    .topnav a {
+        font-size: 15px;
+        padding: 10px;
     }
-     body, header, .line, .navbar, .logoh1, .menu, .nav-links, .nav-links.show, .hidden-nav{ 
-        flex-direction: column;
+
+    .news-grid {
+        grid-template-columns: 1fr;
     }
-    *news{
+
+    .news-item {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .news-item img {
+        width: 90%;
+        height: auto;
+    }
+
+    .featured-news h2 {
+        font-size: 22px;
+    }
+
+    .featured-news p {
+        padding: 0;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        width: 100%;
+    }
+
+    .news-main {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .read-more-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .breaking-news {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .topnav .icon {
+        padding: 10px;
+    }
+
+    .show {
+        height: 200px;
+    }
+
+    .like {
+        width: 90%;
+        height: 50%;
     }
 }
+
+
 
