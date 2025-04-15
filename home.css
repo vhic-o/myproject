@@ -84,6 +84,7 @@ body {
     overflow-x: auto;
   }
   .card {
+    
     background: #fff;
     padding: 10px;
     border-radius: 6px;
@@ -91,3 +92,18 @@ body {
     width: 200px;
     flex-shrink: 0;
   }
+  .read-more {
+    color: gainsboro;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  footer{
+    text-align: center;
+    background-color:#ECECEC ;
+    color:#000000;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer a{
+    text-decoration: none;
+}
