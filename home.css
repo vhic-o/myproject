@@ -3,8 +3,17 @@ body {
     font-family: Arial, sans-serif;
     background: #f9f9f9;
   }
-  header {
-    background: #fff;
+  .fixed-container{
+    position: sticky; /* Fix the entire container */
+    top: 0; /* Stick it to the top of the viewport */
+    left: 0; /* Align it to the left edge of the viewport */
+    width: 100%; /* Make it span the full width of the page */
+    z-index: 1000; /* Ensure it stays above other elements */
+    background: #fff; /* Ensure the background is consistent */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+  .header {
+    background: #f5ebe9;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -26,11 +35,21 @@ body {
     color: #333;
     font-weight: bold;
   }
+  nav ul li a:hover {
+    color: black;
+    text-decoration: underline;
+  }
   .top-headline {
-    background: gray;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  background: gray;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for headline changes */
+  }
+  .top-headline p{
+    margin: 0;
   }
   .container {
     max-width: 1200px;
