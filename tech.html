@@ -4,29 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technology News - Global News</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Header styling */
+        .fixed-container{
+           position: sticky; /* Fix the entire container */
+           top: 0; /* Stick it to the top of the viewport */
+           left: 0; /* Align it to the left edge of the viewport */
+           width: 100%; /* Make it span the full width of the page */
+           z-index: 1000; /* Ensure it stays above other elements */
+           background: #fff; /* Ensure the background is consistent */
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+        }
+        header {
+          background: #f5ebe9;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #ddd;
+        }
+        nav ul {
+           list-style: none;
+           display: flex;
+           gap: 20px;
+           margin: 0;
+           padding: 0;
+        }
+        nav ul li {
+          display: inline;
+       }
+       nav ul li a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+        }
+        nav ul li a:hover {
+           color: black;
+           text-decoration: underline;
+        }
+        main {
+          width: 80%;
+          margin: 20px auto;
+          padding: 20px;
+          background: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+        }
 
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        article h3 {
+            margin-top: 0;
+            color: #333; /* Matches header color */
+        }
+
+        article p {
+            margin-bottom: 15px;
+        }
+        article:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer{
+            text-align: center;
+            background-color:#ECECEC ;
+            color:#000000;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Technology News</h1>
-        <nav>
-            <a href="index.html">Home</a> | <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <div class="fixed-container">
+        <header>
+          <h1>Technology News</h1>
+          <nav>
+            <ul>
+              <li><a href="health.html">Health</a></li>
+              <li><a href="economy.html">Economy</a></li>
+              <li><a href="social.html">Social</a></li>
+              <li><a href="tech.html">Technology</a></li>
+              <li><a href="othernews.html">Other News</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
 
     <main>
-        <h2>Latest Tech Innovations</h2>
-        <article>
-            <h3>AI Revolution in the Workplace</h3>
-            <p>Artificial intelligence is changing the way businesses operate...</p>
-            <a href="#">Read More</a>
-        </article>
+        <!-- Focused Article on AI-Driven Future -->
+        <h2>AI-Driven Future: What's Next?</h2>
 
         <article>
-            <h3>New Smartphone Launch: Features & Reviews</h3>
-            <p>The latest smartphone features cutting-edge AI technology...</p>
-            <a href="#">Read More</a>
+            <h3>The Future of Artificial Intelligence</h3>
+            <p>Artificial Intelligence (AI) is no longer just a futuristic concept—it's already transforming industries and shaping the way we live and work. As AI continues to evolve, experts predict groundbreaking advancements that will redefine technology, business, and society in the coming years.</p>
+
+            <p>Here are some key areas where AI is expected to make a significant impact:</p>
+
+            <ul>
+                <li><strong>Automation in Everyday Life:</strong> AI-powered automation is set to revolutionize daily tasks, from smart home devices managing household chores to self-driving cars navigating city streets. These innovations will save time, improve efficiency, and enhance convenience.</li>
+                <li><strong>Healthcare Revolution:</strong> AI is poised to transform healthcare by enabling early disease detection, personalized treatment plans, and robotic surgeries. Machine learning algorithms can analyze vast amounts of medical data to identify patterns humans might miss, leading to better patient outcomes.</li>
+                <li><strong>Workplace Transformation:</strong> AI-driven tools are reshaping the workplace by automating repetitive tasks, improving decision-making, and fostering collaboration. While some jobs may be replaced, new roles in AI development, ethics, and oversight will emerge, creating opportunities for workers with the right skills.</li>
+                <li><strong>Education and Learning:</strong> AI is making education more accessible and personalized. Adaptive learning platforms use AI to tailor lessons to individual students' needs, helping them learn at their own pace. Virtual tutors and AI-powered language translation tools are also breaking down barriers to global education.</li>
+                <li><strong>Ethical Challenges:</strong> As AI becomes more integrated into society, ethical concerns around privacy, bias, and job displacement are growing. Governments, organizations, and researchers must work together to ensure AI is developed and used responsibly, prioritizing transparency and fairness.</li>
+            </ul>
+
+            <p>Looking ahead, the possibilities of an AI-driven future are both exciting and challenging. Innovations in AI have the potential to solve some of humanity's most pressing problems, from climate change to healthcare access. However, it's crucial to address the ethical and societal implications to ensure these advancements benefit everyone.</p>
+
+            <p>For businesses and individuals, staying informed about AI trends and adapting to its rapid evolution will be key to thriving in this new era. Whether you're an entrepreneur exploring AI solutions or a consumer embracing AI-powered tools, the future holds immense opportunities for growth and transformation.</p>
         </article>
     </main>
 

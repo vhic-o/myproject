@@ -4,28 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Economy News - Global News</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+         body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Header styling */
+        .fixed-container{
+           position: sticky; /* Fix the entire container */
+           top: 0; /* Stick it to the top of the viewport */
+           left: 0; /* Align it to the left edge of the viewport */
+           width: 100%; /* Make it span the full width of the page */
+           z-index: 1000; /* Ensure it stays above other elements */
+           background: #fff; /* Ensure the background is consistent */
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+        }
+        header {
+          background: #f5ebe9;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #ddd;
+        }
+        nav ul {
+           list-style: none;
+           display: flex;
+           gap: 20px;
+           margin: 0;
+           padding: 0;
+        }
+        nav ul li {
+          display: inline;
+       }
+       nav ul li a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+        }
+        nav ul li a:hover {
+           color: black;
+           text-decoration: underline;
+        }
+        main {
+          width: 80%;
+          margin: 20px auto;
+          padding: 20px;
+          background: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+        }
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        article h3 {
+            margin-top: 0;
+            color: #333; /* Matches header color */
+        }
+
+        article p {
+            margin-bottom: 15px;
+        }
+        article:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer{
+            text-align: center;
+            background-color:#ECECEC ;
+            color:#000000;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Economy News</h1>
-        <nav>
-            <a href="index.html">Home</a> | <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
+    <div class="fixed-container">
+        <header>
+          <h1>Economy News</h1>
+          <nav>
+            <ul>
+              <li><a href="health.html">Health</a></li>
+              <li><a href="economy.html">Economy</a></li>
+              <li><a href="social.html">Social</a></li>
+              <li><a href="tech.html">Technology</a></li>
+              <li><a href="othernews.html">Other News</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
     <main>
-        <h2>Latest Economy News</h2>
-        <article>
-            <h3>Stock Market Surges to Record High</h3>
-            <p>The stock market reached an all-time high today as investors remain optimistic...</p>
-            <a href="#">Read More</a>
-        </article>
+        <!-- Focused Article on Stock Market Trends -->
+        <h2>Understanding Stock Market Trends</h2>
 
         <article>
-            <h3>How Inflation is Impacting Small Businesses</h3>
-            <p>Inflation rates have increased, causing businesses to adjust their strategies...</p>
-            <a href="#">Read More</a>
+            <h3>Current Trends in the Stock Market</h3>
+            <p>The stock market has been experiencing significant volatility in recent months, driven by a combination of global economic factors, technological advancements, and shifting investor sentiment. Understanding these trends is essential for both seasoned investors and newcomers looking to navigate the financial landscape.</p>
+
+            <p>Here are some key trends shaping the stock market today:</p>
+
+            <ul>
+                <li><strong>Technology Sector Growth:</strong> The technology sector continues to dominate the stock market, with companies in artificial intelligence, cloud computing, and renewable energy leading the way. Investors are increasingly drawn to tech stocks due to their potential for high returns.</li>
+                <li><strong>Impact of Inflation:</strong> Rising inflation rates have influenced stock market performance, causing some sectors like consumer goods and real estate to face challenges. However, sectors such as commodities and energy have seen increased demand as investors hedge against inflation.</li>
+                <li><strong>Sustainable Investing:</strong> Environmental, Social, and Governance (ESG) investing has gained momentum as more investors prioritize sustainability. Companies with strong ESG practices are attracting significant attention and capital.</li>
+                <li><strong>Interest Rate Changes:</strong> Central banks around the world are adjusting interest rates to manage inflation and economic growth. These changes directly impact stock prices, with higher rates often leading to reduced stock valuations.</li>
+                <li><strong>Global Economic Uncertainty:</strong> Geopolitical tensions, supply chain disruptions, and fluctuating energy prices have created uncertainty in the market. Despite these challenges, certain industries, such as defense and logistics, have benefited from the shifting dynamics.</li>
+            </ul>
+
+            <p>While stock market trends can be unpredictable, staying informed and adopting a long-term investment strategy can help mitigate risks. It's also important to diversify your portfolio to reduce exposure to any single sector or asset class.</p>
+
+            <p>For investors looking to capitalize on current trends, consulting with financial advisors and conducting thorough research is crucial. By understanding the forces driving the market, you can make informed decisions that align with your financial goals.</p>
         </article>
     </main>
 

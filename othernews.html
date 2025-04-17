@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social News - Global News</title>
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Header styling */
+        .fixed-container{
+           position: sticky; /* Fix the entire container */
+           top: 0; /* Stick it to the top of the viewport */
+           left: 0; /* Align it to the left edge of the viewport */
+           width: 100%; /* Make it span the full width of the page */
+           z-index: 1000; /* Ensure it stays above other elements */
+           background: #fff; /* Ensure the background is consistent */
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+        }
+        header {
+          background: #f5ebe9;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #ddd;
+        }
+        nav ul {
+           list-style: none;
+           display: flex;
+           gap: 20px;
+           margin: 0;
+           padding: 0;
+        }
+        nav ul li {
+          display: inline;
+       }
+       nav ul li a {
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+        }
+        nav ul li a:hover {
+           color: black;
+           text-decoration: underline;
+        }
+        main {
+          width: 80%;
+          margin: 20px auto;
+          padding: 20px;
+          background: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+        }
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        article h3 {
+            margin-top: 0;
+            color: #333; /* Matches header color */
+        }
+
+        article p {
+            margin-bottom: 15px;
+        }
+        article:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer{
+            text-align: center;
+            background-color:#ECECEC ;
+            color:#000000;
+            padding: 10px;
+            margin-top: 20px;
+}
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .news-card {
+                flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .news-card {
+                flex: 1 1 100%; /* One card per row on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-container">
+        <header>
+          <h1>Other News</h1>
+          <nav>
+            <ul>
+              <li><a href="health.html">Health</a></li>
+              <li><a href="economy.html">Economy</a></li>
+              <li><a href="social.html">Social</a></li>
+              <li><a href="tech.html">Technology</a></li>
+              <li><a href="othernews.html">Other News</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <main>
+        <h2>Education Reforms: Aiming to Improve Learning Outcomes</h2>
+
+        <article>
+            <h3>Revolutionizing Education Systems Worldwide</h3>
+            <p>In recent years, governments and educational institutions around the globe have embarked on ambitious reforms to address long-standing challenges in education. These reforms aim to modernize outdated curricula, integrate cutting-edge technology into classrooms, and enhance teacher training programs. The overarching goal is to create a more inclusive and effective education system that prepares students for the demands of the 21st century.</p>
+
+            <h4>Key Areas of Focus:</h4>
+            <ul>
+                <li>
+                    <strong>Curriculum Modernization:</strong>
+                    <p>Traditional curricula are being revamped to emphasize critical thinking, creativity, and problem-solving skills. Subjects like coding, financial literacy, and environmental science are being introduced to prepare students for future careers.</p>
+                </li>
+                <li>
+                    <strong>Integration of Technology:</strong>
+                    <p>The adoption of digital tools such as interactive whiteboards, tablets, and online learning platforms has transformed classrooms. These technologies make education more engaging and accessible, particularly for remote or underserved communities.</p>
+                </li>
+                <li>
+                    <strong>Personalized Learning:</strong>
+                    <p>Personalized learning programs are being implemented to cater to individual student needs. Adaptive software and AI-driven tools help tailor lessons to each student's pace and learning style, ensuring no child is left behind.</p>
+                </li>
+                <li>
+                    <strong>Teacher Empowerment:</strong>
+                    <p>Teachers are receiving professional development opportunities to adapt to new methodologies and technologies. By empowering educators, schools aim to improve teaching quality and, ultimately, student outcomes.</p>
+                </li>
+                <li>
+                    <strong>Community Involvement:</strong>
+                    <p>Parents and local communities are being encouraged to actively participate in the educational process. This collaborative approach fosters a supportive learning environment and strengthens the connection between schools and society.</p>
+                </li>
+            </ul>
+
+            <h4>Challenges and Opportunities:</h4>
+            <p>While these reforms hold immense potential, they also face challenges such as funding constraints, resistance to change, and disparities in access to resources. However, with careful planning and execution, these obstacles can be overcome, paving the way for a brighter future for learners worldwide.</p>
+
+            <p>As the global education landscape continues to evolve, one thing is clear: reforming education systems is not just about improving test scores—it's about equipping students with the skills, knowledge, and resilience they need to thrive in an ever-changing world.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Global News</p>
+    </footer>
+</body>
+</html>
