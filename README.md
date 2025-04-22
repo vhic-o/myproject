@@ -1,41 +1,58 @@
-Global News
-A simple, responsive news website that aggregates the latest articles and categories, including Health, Economy, Social, Sports, Entertainment, Education, and Technology. The website includes breaking news, trending stories, and an interactive design with navigation options.
+🌍 GlobalNews
+GlobalNews is a modern, responsive news website that brings users the latest stories in health, economy, society, technology, and more. It highlights impactful news articles, interactive elements, and a clean user interface built with HTML, CSS, and JavaScript.
 
-Features
-Breaking News Section: Displays live updates for breaking news.
+📸 Preview
 
-Trending and Popular News: Shows current trending topics and popular news from major sources like BBC, ESPN, and more.
+(Replace with an actual screenshot if needed)
 
-Category News: Includes sections for Health, Economy, Sports, Entertainment, Education, and Technology news.
+🛠️ Features
+💡 Dynamic headline section to display breaking news
 
-Responsive Navigation: The website features a responsive navigation bar, accessible via a hamburger menu on smaller screens.
+📰 Main feature area showcasing top stories
 
-Read More Links: Allows users to click on links that take them to full news articles in various categories.
+🧑‍⚕️ Focus on health, education, technology, economy, and social issues
 
-Technologies Used
-HTML: For the structure and content of the pages.
+🧭 Easy navigation to different news categories
 
-CSS: For styling the layout and design of the website.
+🔥 Popular content cards featuring S.H.E Centre activities
 
-JavaScript: For interactive elements such as the hamburger menu toggle and breaking news updates.
+🧠 "Recommended" stories with relevant articles for deeper reading
 
-Folder Structure
-index.html – Main homepage file.
+📱 Responsive layout suitable for all devices
 
-style.css – Styling for the website.
+🎨 Font Awesome integration for enhanced iconography
 
-home.js – JavaScript for menu functionality.
+🔗 Live Demo
+Coming Soon
+(Or add your hosted URL here)
 
-/images/ – Folder containing images used on the site (like images for the news categories).
+📂 Project Structure
+graphql
+Copy
+Edit
+GlobalNews/
+│
+├── images/             # Image assets used throughout the website
+├── home.css            # Stylesheet for layout and design
+├── hom.js              # JavaScript for dynamic interactions
+├── index.html          # Main landing page
+├── health.html         # Category page: Health
+├── economy.html        # Category page: Economy
+├── tech.html           # Category page: Technology
+├── social.html         # Category page: Social
+├── othernews.html      # Category page: Other News
+├── contact.html        # Contact form/info
+└── README.md           # Project information (this file)
+📦 Technologies Used
+HTML5 – Markup structure
 
-Additional HTML files like health.html, economy.html, etc.
+CSS3 – Styling and layout
 
-Usage
-Breaking News: The website will automatically load the latest breaking news.
+JavaScript (Vanilla) – Dynamic behavior (e.g., dynamic headline)
 
-Trending Now: Displays a list of current trending articles.
+Font Awesome – Icons and branding visuals
 
-Main News Categories: Click on "Read More" for more detailed articles in categories such as Health, Sports, Economy, Entertainment, and Technology.
+External Links : Links to external websites for additional resources.
 
 Contributing
 Feel free to fork this project and submit issues or pull requests. If you have improvements or new features you'd like to contribute, don't hesitate to create a pull request!

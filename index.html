@@ -3,222 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global News</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GlobalNews</title>
+    <link rel="stylesheet" href="home.css">
+    <head>
+      <!-- font awesome link -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+    </head>
 </head>
 <body>
-    <!--Header-->
-    <header>
-        <nav>
-            <div class="topnav">
-                <a href="#home" class="active">GLOBAL NEWS</a>
-                <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
-                    <a href="health.html">Health</a>
-                    <a href="economy.html">Economy</a>
-                    <a href="social.html">Social</a>
-                    <a href="tech.html">Technology</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-                </a>
-            </div>
-          </nav>
-          <script src="home.js"></script>
+  <div class="fixed-container">
+    <div class="top-headline">
+      <p id="dynamic-headline">Breaking News: Stay updated with the latest global events!</p>
+      <script src="hom.js"></script>
+    </div>
+    <header class="header">
+      <h1>Global<i class="fa-solid fa-globe" style="color: #69aef4;"></i><span>News</span></h1>
+      <nav>
+        <ul>
+          <li><a href="health.html">Health</a></li>
+          <li><a href="economy.html">Economy</a></li>
+          <li><a href="social.html">Social</a></li>
+          <li><a href="tech.html">Technology</a></li>
+          <li><a href="othernews.html">Other News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+  </div>
+    
 
-    <!--Breaking news section-->
-    <section class="breaking-news">
-        <h2>Breaking News</h2>
-        <marquee width="40%" direction="up" height="200px" behavior="scroll" scrollamount="3">
-            <pre>
-                <li><a href="https://www.bbc.com/news/politics" target="_blank">Breaking: Political events unfold around the world</a></li>
+      <div class="container">
+        <section class="main-featured">
+          <div class="large-image">
+            <img src="./images/innov.jpeg.jpg" alt="Main story">
+            <h3>IN AWARENESS, HEALTH, INNOVATIONS, STRENGTHENING...</h3>
+            <p>19 Jan, 2025</p>
+            <a href="https://cihpng.org/2025/01/29/innovations-breaking-barriers-to-childrens-immunization-in-nigeria-and-ethiopia-win-major-funding-from-save-the-children/" class="read-more">Read More →</a>
+          </div>
+          <div class="side-images">
+            <div class="side-article">
+              <img src="./images/doc.jpeg.jpeg" alt="Side 1">
+              <h4>TALK TO A DOCTOR</h4>
+              <p>#WorldAIDSDay</p>
+              <a href="https://cihpng.org/2024/12/02/talk-to-a-doctor/" class="read-more">Read More →</a>
+            </div>
+            <div class="side-article">
+              <img src="./images/tuber.jpeg.jpg" alt="Side 2">
+              <h4>TB NOT Asthma</h4>
+              <p>For weeks, Azeezat had been gasping for air, a fever burning through her.</p>
+              <a href="https://cihpng.org/2025/03/26/tb-not-asthma/" class="read-more">Read More →</a>
+            </div>
+            <div class="side-article">
+              <img src="./images/worldaids.jpeg.jpg" alt="Side 3">
+              <h4>Empowering Communities to take the Lead to End AIDS BY 2030</h4>
+              <p>CIHP's World AIDS Day Impact across Project States</p>
+              <a href="https://cihpng.org/2024/10/04/world-aids-day/" class="read-more">Read More →</a>
+            </div>
+            <div class="side-article">
+              <img src="./images/member.jpeg.png" alt="Side 4">
+              <h4>Celebrating The Amiable CIHP Female Board Members</h4>
+              <p>IWD2024</p>
+              <a href="https://cihpng.org/2024/05/04/cihp-iwd2024/" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </section><hr>
 
-            <pre>
-                <li><a href="https://www.espn.com" target="_blank">Sports: Historic championship win last night</a></li>
-            
-        <pre>
-            <li><a href="https://www.techcrunch.com" target="_blank">Tech: Major AI breakthrough in the tech industry</a></li>      
-            
-        <pre>              
-            <li><a href="https://www.forbes.com/economy/" target="_blank">Economy: Stock market sees unexpected surge today</a></li>
+        <section class="section popular">
+          <h2>Popular</h2>
+          <div class="cards">
+            <div class="card">
+              <img src="./images/popu7.jpg" alt="Popular 1">
+              <p>S.H.E CENTRE </p>
+              <a href="othernews.html" class="read-more">Read More →</a>
+            </div>
+            <div class="card">
+              <img src="./images/popu1.jpg" alt="Popular 2">
+               <p>S.H.E CENTRE - Coding Class</p> 
+               <a href="othernews.html" class="read-more">Read More →</a>
+            </div>
+            <div class="card">
+              <img src="./images/popu2.jpg" alt="Popular 3">
+               <p>S.H.E CENTRE - Hairdressing Class</p>
+               <a href="othernews.html" class="read-more">Read More →</a>
+            </div>
+            <div class="card">
+              <img src="./images/popu3.jpg" alt="Popular 4">
+               <p>S.H.E CENTRE - Immersive Learning </p> 
+               <a href="othernews.html" class="read-more">Read More →</a> 
+            </div>
+            <div class="card">
+              <img src="./images/popu4.jpg" alt="Popular 5">
+               <p>S.H.E CENTRE - Conference Room</p> 
+               <a href="othernews.html" class="read-more">Read More →</a>
+            </div>
+            <div class="card">
+              <img src="./images/popu8.jpg" alt="Popular 6">
+               <p>S.H.E CENTRE - Tie & Die Class </p> 
+               <a href="social.html" class="read-more">Read More →</a> 
+            </div>
+            <div class="card">
+              <img src="./images/popu 9.jpg" alt="Popular 7">
+               <p>S.H.E CENTRE - Tailoring Class </p> 
+               <a href="othernews.html" class="read-more">Read More →</a> 
+            </div>
+            <div class="card">
+              <img src="./images/popu10.jpg" alt="Popular 8">
+               <p>S.H.E CENTRE - Social Media Class </p> 
+               <a href="othernews.html" class="read-more">Read More →</a> 
+            </div>
+          </div>
+        </section><hr>
 
-        <pre>
-            <li><a href="https://www.hollywoodreporter.com" target="_blank">Entertainment: Movie X breaks box office records</a></li>
-        
-        <pre>
-            <li><a href="https://www.healthline.com/nutrition/best-diets-2025" target="_blank">Health: New research shows yoga improves mental well-being</a></li> 
-</marquee>   
-    </section>
-    <!--Main layout-->
-    <div class="container">
-
-
-        <!--Left sidebar(Trending News)-->
-        <aside class="left-sidebar">
-            <h2>Trending Now</h2>
-            <ul id="trending-list">
-                <li><a href="https://www.bbc.com/news/politics" target="_blank">Breaking: Political events unfold</a></li>
-                <li><a href="https://www.espn.com" target="_blank">Sports: Team A wins championship</a></li>
-                <li><a href="https://www.techcrunch.com" target="_blank">Tech: New AI technology released</a></li>
-                <li><a href="https://www.hollywoodreporter.com" target="_blank">Entertainment: Movie X breaks record</a></li>
-            </ul>    
-        </aside>
-
-        <!--main content-->
-        <main class="news-main">
-
-            <!--featured news-->
-            <section class="featured-news">
-                <div class="show">
-                     <div class="like" style="background-image: url(images/img5.jpg);"></div>
-                     <div class="like" style="background-image: url(images/img3.jpg);"></div>
-                     <div class="like" style="background-image: url(images/img2.jpg);"></div>
-                     <div class="like" style="background-image: url(images/img4.jpg);"></div>
+        <section class="section">
+          <div class="footer-columns">
+            <div>
+              <h2>Recommended</h2>
+              <div class="cards">
+                <div class="card">
+                  <img src="./images/eco.jpg" alt="Recommended 2">
+                  <p class="caption">Stock Market Trends</p>
+                  <a href="economy.html" class="read-more">Read More →</a>
                 </div>
-                <h2>Top Story: CIHP - Centre for Integrated Health Programs</h2>
-                <p> is a leading indigenous not-for-profit non-governmental organization, promoting better health outcomes for all Nigerians through the creation of sustainable systems and partnerships by applying our collective learnings and experiences.</p>
-            </section>
-
-            <!--category(Health, Economy, Social,Tech)-->
-            <section class="news-grid">
-
-                <div class="news-category health">
-                    <h3>Health</h3>
-                    <div class="news-item">
-                        <img src="/images/yoga.png" alt="Health News">
-                        <div>
-                            <h4>The benefit of yoga</h4>
-                            <p class="read-more-content">Yoga offers numerious benefits, including improved flexibility, strength, balance, and reduced stress, anxiety, and chronic pain, while also promoting better sleep, increased energy, and overall well-being.</p>
-                            <span class="more-text"> Regular yoga practice helps reduce stress, promotes relaxation, and increases body awareness.</span>
-                            </p>
-                            <!-- this will take you to the individual page-->
-                            <button onclick="window.location.href='health.html'" class="read-more-btn">Read More</button>
-                        </div>
-                    </div>
+                <div class="card">
+                  <img src="./images/health.jpg" alt="Recommended 3">
+                  <p class="caption">Healthy Eating Habit</p>
+                  <a href="health.html" class="read-more">Read More →</a>
                 </div>
-                <div class="news-category health">
-                    <h3>Sport</h3>
-                    <div class="news-item">
-                        <img src="/images/sport.jpg" alt="Sport News">
-                        <div>
-                            <h4>Epic Football Final: A Match for the Ages</h4>
-                            <p class="read-more-content">
-                                Last nights championship game was an absolute thriller, with the underdog team securing a last-minute victory.Fans erupted in celebration as the winning goal was scored in the final seconds.</p>
-                                <span class="more-text"> The teams coach praised their determination and teamwork very well.</span>
-                            </p>
-                            <button onclick="window.location.href='social.html'" class="read-more-btn">Read More</button>    
-                        </div>
-                    </div>
+                <div class="card">
+                  <img src="./images/edu.jpg" alt="Recommended 4">
+                  <p class="caption">Aim to Improve Learning</p>
+                  <a href="social.html" class="read-more">Read More →</a>
                 </div>
-                <!--Economy news-->
-                <div class="news-category economy">
-                    <h3>Economy</h3>
-                    <div class="news-item">
-                        <img src="/images/eco.jpg" alt="Economy News">
-                        <div>
-                            <h4>Stock Market Trends</h4>
-                            <p class="read-more-content">During losing periods, positions are reduced and trade size is cut back. Analysts classify these trends as secular for long time-frames,primary for medium time-frames, and secondary for short time-frames.</p>
-                            <span class="more-text"> Analysts predict that the trend will continue, driven by innovations in AI and semiconductor technology.</span>
-                            </p>
-                            <button onclick="window.location.href='economy.html'" class="read-more-btn">Read More</button>
-                        </div>
-                    </div>
+                <div class="card">
+                  <img src="./images/tech2.jpg" alt="Recommended 5">
+                  <p class="caption">AI-Driven Future</p>
+                  <a href="tech.html" class="read-more">Read More →</a>
                 </div>
-                <div class="news-category economy">
-                    <h3>Entertainment</h3>
-                    <div class="news-item">
-                        <img src="/images/ent.jpg" alt="Entertainment News">
-                        <div>
-                            <h4>Blockbusters Movie breaks Records on Opening Weekend</h4>
-                            <p class="read-more-content">
-                                The much-anticipated action film shattered box office records within its first weekend.Critics are calling it one of the most visually stunning movies ever made.</p>
-                            <span class="more-text"> With an all-star cast and an immersive storyline, audiences are already demanding a sequel.</span>
-                            </p>
-                            <button onclick="window.location.href='social.html'" class="read-more-btn">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                
-          
-                <!--Social news-->
-                <div class="news-category social">
-                    <h3>Social</h3>
-                    <div class="news-item">
-                        <img src="/images/social.jpg" alt="Social News">
-                        <div>
-                            <h4>Community project launched</h4>
-                            <p>CIHP is a multi-funded indigenous not-for-profit, non-governmental organization established in 2010 to promote better health outcomes for all Nigerians through sustainable partnerships and locally adapted, rigorously tested approaches by applying our collective learnings and experiences.</p>
-                            <button  onclick="window.location.href='social.html'"class="read-more-btn">Read More</button>
-                          
-                        </div>
-                    </div>
-                </div>
-                <div class="news-category social">
-                    <h3>Education</h3>
-                    <div class="news-item">
-                        <img src="/images/edu.jpg" alt="Education News">
-                        <div>
-                            <h4>New Education Reforms Aim to Improve Learning</h4>
-                            <p class="read-more-content">
-                                The government has introduced a set of reforms aimed at making education more interactive and technology-driven.
-                                Schools will implement AI-based learning platforms to enhance student engagement.
-                                <span class="more-text"> Educators believe this approach will help students develop critical thinking skills and prepare them for the digital economy.</span>
-                            </p>
-                            <button  onclick="window.location.href='social.html'" class="read-more-btn">Read More</button>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
 
-                <!--Technology news-->
-                <div class="news-category technology">
-                    <h3>Technology</h3>
-                    <div class="news-item">
-                        <img src="/images/tech1.jpg" alt="Tech News">
-                        <div>
-                            <h4>Latest Smartphone Innovation</h4>
-                            <p>Samsung's Galaxy S25 series integrates advanced AI features, including real-time language translation and personalized content creation, aiming to provide a more intuitive user experience.</p>
-                            <button  onclick="window.location.href='tech.html'"class="read-more-btn">Read More</button>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="news-category technology" >
-                    <h3>Technology</h3>
-                    <div class="news-item">
-                        <img src="/images/tech2.jpg" alt="Tech News">
-                        <div>
-                            <h4>AI-Driven Future: Whats's Next</h4>
-                            <p>The AI-driven future is rapidly transforming how we live, work, and connect. Next-generation developments are focused on hyper-personalized experiences, autonomous decision-making, and seamless human-AI collaboration.</p>
-                            <button  onclick="window.location.href='tech.html'"class="read-more-btn">Read More</button>
-                           
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-        </main>
-
-        <!--right sidebar(popular news)-->
-        <aside class="right-sidebar">
-            <h2>Popular News</h2>
-            <ul id="popular-news-list">
-                <li><a href="https://www.nytimes.com/most-popular" target="_blank">Most read article of the year</a></li>
-                <li><a href="https://www.wired.com/category/tech" target="_blank">Tech industry insights</a></li>
-                <li><a href="https://www.healthline.com/nutrition/best-diets-2025" target="_blank">Health: Best diets for 2025</a></li>
-                <li><a href="https://www.forbes.com/economy/" target="_blank">Economy: Inflation explained</a></li>  
-            </ul>
-        </aside>
-
-    </div> 
-
-    <!--footer-->
-    <footer>
+            <footer>
         <p>&copy; 2025 Global News. All rights reserved.</p>
         <p><a href="./contact.html">Contact Us</a></p>
     </footer>
+  
 </body>
 </html>
