@@ -3,7 +3,9 @@ GlobalNews is a modern, responsive news website that brings users the latest sto
 
 📸 Preview
 
-(Replace with an actual screenshot if needed)
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/f551d900-7005-4f29-8d83-47a166fdada4" />
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/ac1d5853-8d3a-49cb-aa1f-fdbb48f6a9ce" />
+
 
 🛠️ Features
 💡 Dynamic headline section to display breaking news
