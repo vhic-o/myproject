@@ -178,29 +178,6 @@ footer a{
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
-  .menu-toggle {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar ul.active {
-    display: flex;
-  }
-
-  .navbar ul li {
-    margin: 1rem 0;
-  }
-
   nav ul {
       flex-direction: column;
       gap: 10px;
@@ -216,29 +193,6 @@ footer a{
   .header {
       flex-direction: column;
       align-items: flex-start;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar ul.active {
-    display: flex;
-  }
-
-  .navbar ul li {
-    margin: 1rem 0;
   }
 
   nav ul {
