@@ -31,24 +31,28 @@
           align-items: center;
           border-bottom: 1px solid #ddd;
         }
-        nav ul {
+        /* Hamburger Menu */
+        .menu-toggle {
+           display: none;
+           cursor: pointer;
+        }
+        .navbar{
+           display: flex;
+        }
+        .nav-list {
            list-style: none;
            display: flex;
            gap: 20px;
            margin: 0;
            padding: 0;
         }
-        nav ul li {
-          display: inline;
-       }
-       nav ul li a {
-          text-decoration: none;
-          color: #333;
-          font-weight: bold;
+        .nav-list li {
+        display: inline;
         }
-        nav ul li a:hover {
-           color: black;
-           text-decoration: underline;
+        .nav-list li a {
+           text-decoration: none;
+           color: #333;
+           font-weight: bold;
         }
         main {
           width: 80%;
@@ -93,15 +97,42 @@
                 padding: 10px;
             }
 
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
+            .menu-toggle {
+              display: block;
             }
 
-            nav ul li {
-                text-align: left;
+            .navbar {
+               position: absolute;
+               top: 70px;
+               left: 0;
+               right: 0;
+               background-color: #f8f8f8;
+               display: none;
+               flex-direction: column;
+               align-items: center;
+               border-top: 1px solid #ccc;
             }
 
+            .navbar.active {
+               display: flex;
+            }
+
+           .nav-list {
+               flex-direction: column;
+               width: 100%;
+               gap: 10px;
+               text-align: center;
+            }
+
+            .nav-list li {
+               width: 100%;
+            }
+
+            .nav-list li a {
+               display: block;
+               padding: 15px 0;
+               border-bottom: 1px solid #ddd;
+            }
             main {
                 width: 100%; /* Full width on small screens */
                 padding: 15px;
@@ -126,8 +157,41 @@
                 font-size: 1.5rem; /* Reduce header title size */
             }
 
-            nav ul li a {
-                font-size: 0.9rem; /* Reduce navigation link size */
+            .menu-toggle {
+              display: block;
+            }
+
+            .navbar {
+               position: absolute;
+               top: 70px;
+               left: 0;
+               right: 0;
+               background-color: #f8f8f8;
+               display: none;
+               flex-direction: column;
+               align-items: center;
+               border-top: 1px solid #ccc;
+            }
+
+            .navbar.active {
+               display: flex;
+            }
+
+           .nav-list {
+               flex-direction: column;
+               width: 100%;
+               gap: 10px;
+               text-align: center;
+            }
+
+            .nav-list li {
+               width: 100%;
+            }
+
+            .nav-list li a {
+               display: block;
+               padding: 15px 0;
+               border-bottom: 1px solid #ddd;
             }
 
             article h3 {
@@ -148,8 +212,12 @@
     <div class="fixed-container">
         <header>
           <h1>Health News</h1>
-          <nav>
-            <ul>
+          <!-- Hamburger Menu Icon -->
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+          <nav class="navbar">
+            <ul class="nav-list">
               <li><a href="index.html">Home</a></li>  
               <li><a href="health.html">Health</a></li>
               <li><a href="economy.html">Economy</a></li>
@@ -159,6 +227,15 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
+          <script>document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navbar = document.querySelector('.navbar');
+          
+            mobileMenu.addEventListener('click', () => {
+              navbar.classList.toggle('active');
+            });
+          });
+          </script>
         </header>
       </div>
 

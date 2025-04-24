@@ -23,25 +23,27 @@ body {
   /* Hamburger Menu */
   .menu-toggle {
     display: none;
-    font-size: 2rem;
     cursor: pointer;
   }
-  nav ul {
+  .navbar{
+    display: flex;
+  }
+  .nav-list {
     list-style: none;
     display: flex;
     gap: 20px;
     margin: 0;
     padding: 0;
   }
-  nav ul li {
+  .nav-list li {
     display: inline;
   }
-  nav ul li a {
+  .nav-list li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
   }
-  nav ul li a:hover {
+  .caption li a:hover {
     color: black;
     text-decoration: underline;
   }
@@ -177,11 +179,46 @@ footer a{
   .cards {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
+  .menu-toggle {
+    display: block;
+  }
 
-  nav ul {
+  .navbar {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #ccc;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list li a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  /* nav ul {
       flex-direction: column;
       gap: 10px;
-  }
+  }*/
 }
 
 /* For Mobile Phones (Small Screens) */
@@ -194,11 +231,47 @@ footer a{
       flex-direction: column;
       align-items: flex-start;
   }
+  .menu-toggle {
+    display: block;
+  }
 
-  nav ul {
+  .navbar {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #ccc;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list li a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* nav ul { 
       flex-direction: column;
       gap: 10px;
-  }
+  }*/
 
 
   .main-featured .large-image img {

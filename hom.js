@@ -22,9 +22,4 @@ const headlines = [
   // Initialize the first headline immediately
   updateHeadline();
 
-  const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = document.getElementById('nav-links');
-
-    mobileMenu.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
+   
